@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>Word Suggest python</title>
+
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery-ui.min.js"></script>
+<link href="jquery-ui.min.css" rel="stylesheet"/>
+<link href="w3.css" rel="stylesheet"/>
+
+</head>
+
+<body style="padding:12px;">
+
+<h1>Word Suggest</h1>
+<p>Github:<a href="https://github.com/ohidurbappy/py-word-suggest">https://github.com/ohidurbappy/py-word-suggest</a></p>
+<div class="w3-margin">
+<form action="?" method="get">
+<input type="text" name="q" id="auto_query" placeholder="type something" class="w3-padding w3-round w3-border"/>
+<input type="submit" name="btn" value="Submit" class="w3-button w3-blue w3-round"/>
+</form>
+</div>
+
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+$("#auto_query").autocomplete(
+{
+source:'http://localhost:8080/www/'
+});
+
+
+});
+
+
+$(function(){
+
+
+
+});
+
+
+</script>
+
+</body>
+</html>
